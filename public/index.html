@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Works of Stephen King</title>
+
+ <!--Script references to the bootstrap CSS, Ajax and Jequery Libarys-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link data-require="bootstrap@*" data-semver="4.0.5" rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.min.css" />
+    <script data-require="bootstrap@*" data-semver="4.0.5" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+<script>
+
+<!--Jquery for the images to make sure the links work properly and they reference the main.js-->
+$(document).ready(function(){
+    $("#shinebutton").click(function(){
+        $.get("/shine", function(data, status){
+		$("#about").html(data);
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#salembutton").click(function(){
+        $.get("/salem", function(data, status){
+		$("#about").html(data);
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#carriebutton").click(function(){
+        $.get("/carrie", function(data, status){
+		$("#about").html(data);
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#miserybutton").click(function(){
+        $.get("/misery", function(data, status){
+		$("#about").html(data);
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#christinebutton").click(function(){
+        $.get("/christine", function(data, status){
+		$("#about").html(data);
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#elevenbutton").click(function(){
+        $.get("/eleven", function(data, status){
+		$("#about").html(data);
+        });
+    });
+});
+
+</script>
+   </head>
+   <body>
+   <style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #DC1E1E;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+</style>
+<ul>
+<!--Title for the page that is located on the left side of the nav bar-->
+<li style="float:left"><h1>The Works of Stephen King</h1></li>
+  <!--The main Navigation Bar which will load the images and content from the public folder and the app get method-->
+  <li><a href="#shining" id="shinebutton">The Shining</a></li>
+  <li><a href="#salem" id="salembutton">Salems Lot</a></li>
+  <li><a href="#carrie" id="carriebutton">Carrie</a></li>
+  <li><a href="#misery" id="miserybutton">Misery</a></li>
+  <li><a href="#christine" id="christinebutton">Christine</a></li>
+  <li><a href="#eleven" id="elevenbutton">11/22/63</a></li>
+</ul>
+   
+	<p>
+	</p>
+  <!--The about section that the user will first see when the website is started up-->
+   <div id = "about">
+   <center><h1>Welcome to the works of Stephen King</h1></center>
+   <p>
+<h2>How to use the site:</h2>
+<p>Simply click on the book title in the navigation bar on the top of the page </p>
+<img src="http://cdn-static.denofgeek.com/sites/denofgeek/files/stephen-king_0.jpg" height= "300" width="600">
+<p>
+</div>
+<!--The footer which will say who created the site-->
+<div id="nav" style="background:#DC1E1E"id="content"id="sidebar">
+<nav><center><h3>Website Designed by Rory Horkan</h3></center>
+ </nav>
+	 </div>
+   </body> 
+   </html>
