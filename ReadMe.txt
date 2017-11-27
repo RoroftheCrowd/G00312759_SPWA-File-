@@ -15,3 +15,8 @@ Step 6: Go to your web browser and type "localhost:8081" in the URL bar, the pag
 Step 7: To terminate node just press ctl c in the command prompt
 
 --End of Document--
+
+
+--How to use the file--
+Once you've entered localhost:8081 into the url bar in your web browser you will be greeted with the index page. It will be a simple welcome page telling the user how to use the page.
+The user simply clicks on a book title in the navigation bar which will redirect them to the books info 
