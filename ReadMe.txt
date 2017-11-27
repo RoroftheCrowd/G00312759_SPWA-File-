@@ -19,4 +19,4 @@ Step 7: To terminate node just press ctl c in the command prompt
 
 --How to use the file--
 Once you've entered localhost:8081 into the url bar in your web browser you will be greeted with the index page. It will be a simple welcome page telling the user how to use the page.
-The user simply clicks on a book title in the navigation bar which will redirect them to the books info 
+The user simply clicks on a book title in the navigation bar which will redirect them to the books information which will contain the books cover, a plot summary and a brief history of the publication history of the book.
